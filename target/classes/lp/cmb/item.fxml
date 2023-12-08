@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="923.0" spacing="40.0" styleClass="item.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp.cmb.itemController">
+    <children>
+        <Label fx:id="lbLinha" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="204.0" text="             Linha">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></Label>
+        <Label fx:id="lbDestino" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="539.0" text=" Destino" HBox.hgrow="NEVER">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+        </Label>
+      <Button fx:id="btnMais" mnemonicParsing="false" onAction="#mostrarPainelEsp" prefHeight="25.0" prefWidth="29.0" text="+" />
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>

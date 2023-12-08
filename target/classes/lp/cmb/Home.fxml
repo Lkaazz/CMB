@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@styles/home.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp.cmb.HomeController">
+   <children>
+      <AnchorPane fx:id="painelHome" layoutX="131.0" layoutY="-3.0" prefHeight="800.0" prefWidth="1133.0" style="-fx-background-color: #002147;">
+         <children>
+            <ImageView fitHeight="803.0" fitWidth="1133.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/background.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="enviarFeedback" layoutX="1022.0" layoutY="691.0" mnemonicParsing="false" onAction="#painelFeedback" prefHeight="84.0" prefWidth="84.0" style="-fx-background-color: #B7D6FB;" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei" size="11.0" />
+               </font>
+            </Button>
+            <PieChart fx:id="grafFeedback" layoutX="509.0" layoutY="146.0" prefHeight="512.0" prefWidth="640.0" />
+            <Text fx:id="txEnviaF" fill="WHITE" layoutX="872.0" layoutY="726.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enviar um feedback" textAlignment="CENTER" wrappingWidth="139.0">
+               <font>
+                  <Font name="Dubai Regular" size="25.0" />
+               </font>
+            </Text>
+            <Pane fx:id="quadroDestaques" layoutX="62.0" layoutY="146.0" prefHeight="580.13" prefWidth="410.07" style="-fx-background-color: #2C2C2C;" stylesheets="@styles/home.css">
+               <children>
+                  <Text fx:id="txQuantFeed" fill="WHITE" layoutX="32.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de feedbacks recebidos" wrappingWidth="348.0">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="29.45" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txTotal" fill="WHITE" layoutX="32.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: 1134" wrappingWidth="253.0">
+                     <font>
+                        <Font name="Dubai Regular" size="29.45" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txLot" fill="WHITE" layoutX="71.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lotação: 442" wrappingWidth="253.0">
+                     <font>
+                        <Font name="Dubai Regular" size="29.45" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txSeg" fill="WHITE" layoutX="71.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segurança: 024" wrappingWidth="253.0">
+                     <font>
+                        <Font name="Dubai Regular" size="29.45" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txAci" fill="WHITE" layoutX="71.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acidente: 324" wrappingWidth="253.0">
+                     <font>
+                        <Font name="Dubai Regular" size="29.45" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txAtr" fill="WHITE" layoutX="71.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atraso: 344" wrappingWidth="253.0">
+                     <font>
+                        <Font name="Dubai Regular" size="29.45" />
+                     </font>
+                  </Text>
+                  <Circle fx:id="c1" fill="DODGERBLUE" layoutX="45.0" layoutY="209.0" radius="13.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="home.css" />
+                  <Circle fx:id="c2" fill="DODGERBLUE" layoutX="45.0" layoutY="250.0" radius="13.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="home.css" />
+                  <Circle fx:id="c3" fill="DODGERBLUE" layoutX="45.0" layoutY="293.0" radius="13.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="home.css" />
+                  <Circle fx:id="c4" fill="DODGERBLUE" layoutX="45.0" layoutY="334.0" radius="13.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="home.css" />
+                  <Text fx:id="txLinhaMais" fill="WHITE" layoutX="32.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de feedbacks recebidos" wrappingWidth="348.0">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="29.45" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ImageView id="imgHome" fx:id="img112" fitHeight="63.0" fitWidth="62.0" layoutX="1033.0" layoutY="702.0" onMouseClicked="#painelHome" preserveRatio="true" styleClass="home.css">
+               <image>
+                  <Image url="@../../images/feedback.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="518.0" layoutY="15.0" text="CMB" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans Bold" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="painelLinhas" layoutX="93.0" layoutY="-4.0" prefHeight="800.0" prefWidth="1133.0" style="-fx-background-color: #002147;" visible="false">
+         <children>
+            <ImageView fitHeight="820.0" fitWidth="1149.0" layoutX="38.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/bg2.png" />
+               </image>
+            </ImageView>
+            <HBox fx:id="hboxItens" layoutX="134.0" layoutY="214.0" prefHeight="54.0" prefWidth="930.0" style="-fx-background-color: gray;">
+               <children>
+                  <HBox fx:id="hBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="937.0" spacing="40.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-background-insets: 1;">
+                     <children>
+                        <Label fx:id="lbLinha1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="18.0" prefWidth="257.0" text="Linha">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Consolas Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbDestino" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="18.0" prefWidth="170.0" text="Destino" HBox.hgrow="NEVER">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Consolas Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+                     </effect>
+                  </HBox>
+               </children>
+            </HBox>
+            <TextField fx:id="tfPesquisar" layoutX="134.0" layoutY="133.0" prefHeight="40.0" prefWidth="149.0" promptText="filtrar linha">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <ScrollPane layoutX="134.0" layoutY="306.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="937.0">
+               <content>
+                  <VBox fx:id="vboxItems" alignment="TOP_CENTER" style="-fx-background-color: gray;" />
+               </content>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ScrollPane>
+            <AnchorPane fx:id="painelLinhasSelect" layoutX="13.0" layoutY="3.0" prefHeight="800.0" prefWidth="1173.0" style="-fx-background-color: #002147;" visible="false">
+               <children>
+                  <ImageView fitHeight="820.0" fitWidth="1149.0" layoutX="24.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/bg2.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="tfSelecionaLinha" alignment="CENTER" layoutX="512.0" layoutY="110.0" prefHeight="54.0" prefWidth="149.0" text="linha">
+                     <font>
+                        <Font name="Dubai Bold" size="23.0" />
+                     </font></TextField>
+                  <Button layoutX="67.0" layoutY="30.0" mnemonicParsing="false" onAction="#fechaPainelLinhasEsp" prefHeight="53.0" prefWidth="52.0" style="-fx-background-color: #FF4F4F;" text="&lt;&lt;">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="21.0" />
+                     </font></Button>
+                  <ScrollPane fx:id="spLinhasEsp" layoutX="119.0" layoutY="249.0" prefHeight="433.0" prefWidth="937.0">
+                     <content>
+                        <VBox fx:id="vbLinhasEsp" prefHeight="431.0" prefWidth="935.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btMapa" layoutX="1011.0" layoutY="101.0" mnemonicParsing="false" onAction="#abrirMapa" opacity="0.64" prefHeight="53.0" prefWidth="52.0" style="-fx-background-color: #537299;" />
+                  <Text fx:id="txVerifique" fill="WHITE" fontSmoothingType="LCD" layoutX="826.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verifique a rota da linha" wrappingWidth="184.830078125">
+                     <font>
+                        <Font name="Calibri Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="546.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="linha" textAlignment="CENTER" wrappingWidth="84.0">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txLinhas1" fill="WHITE" fontSmoothingType="LCD" layoutX="128.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passageiro" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="1020.0" layoutY="111.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/mapa.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txUltimos" fill="WHITE" fontSmoothingType="LCD" layoutX="135.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Últimos relatos da linha" textAlignment="CENTER" wrappingWidth="348.0">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txDescricao1" fill="WHITE" fontSmoothingType="LCD" layoutX="368.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="descrição" textAlignment="CENTER" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txData1" fill="WHITE" fontSmoothingType="LCD" layoutX="956.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="data" textAlignment="CENTER" wrappingWidth="72.0">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Label layoutX="495.0" layoutY="28.0" text="VISUALIZAR LINHAS" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="painelAtualizarPerfil" layoutX="107.0" prefHeight="800.0" prefWidth="1173.0" style="-fx-background-color: #002147;" visible="false">
+         <children>
+            <ImageView fitHeight="803.0" fitWidth="1156.0" layoutX="18.0" layoutY="-3.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/bg1.png" />
+               </image>
+            </ImageView>
+            <DatePicker fx:id="dateAlterarNascimento" layoutX="487.0" layoutY="322.0" prefHeight="34.0" prefWidth="250.0" />
+            <Label layoutX="524.0" layoutY="144.0" text="INSIRA SEU EMAIL" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="562.0" layoutY="219.0" text="NOVO NOME" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="487.0" layoutY="289.0" text="NOVA DATA DE NASCIMENTO" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="556.0" layoutY="436.0" text="NOVA SENHA" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="552.0" layoutY="366.0" text="SENHA ATUAL" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUpdateUsuario" layoutX="512.0" layoutY="590.0" mnemonicParsing="false" onAction="#atualizarPerfil" prefHeight="38.0" prefWidth="198.0" style="-fx-background-color: #607C82;" text="EDITAR PERFIL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="504.0" layoutY="503.0" text="CONFIRMAR NOVA SENHA" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfAlterarEmail" layoutX="486.0" layoutY="174.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+            <TextField fx:id="tfAlterarNome" layoutX="486.0" layoutY="242.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+            <Label layoutX="528.0" layoutY="25.0" text="EDITAR PERFIL" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pfSenhaAntigaAlterar" layoutX="489.0" layoutY="389.0" prefHeight="38.0" prefWidth="249.0" />
+            <PasswordField fx:id="pfAlterarSenha" layoutX="489.0" layoutY="459.0" prefHeight="38.0" prefWidth="249.0" />
+            <PasswordField fx:id="pfConfirmarSenhaAlterar" layoutX="488.0" layoutY="526.0" prefHeight="38.0" prefWidth="249.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="barra" layoutY="-1.0" prefHeight="800.0" prefWidth="132.0" style="-fx-background-color: #333333;">
+         <children>
+            <Button fx:id="bt1" layoutX="1.0" mnemonicParsing="false" onAction="#abrirPainelUsuario" prefHeight="147.24" prefWidth="147.24" style="-fx-background-color: #232323;" styleClass="home.css" />
+            <Button fx:id="bt3" layoutX="1.0" layoutY="296.0" mnemonicParsing="false" onAction="#painelLinhas" prefHeight="148.0" prefWidth="148.0" style="-fx-background-color: #232323;" />
+            <Button fx:id="bt5" layoutX="1.0" layoutY="652.0" mnemonicParsing="false" onAction="#fecharAplicacao" prefHeight="147.24" prefWidth="147.24" style="-fx-background-color: #FF4F4F;" />
+            <Button fx:id="bt2" layoutX="1.0" layoutY="148.0" mnemonicParsing="false" onAction="#painelHome" prefHeight="147.24" prefWidth="147.24" style="-fx-background-color: #232323;" />
+            <ImageView id="imgHome" fx:id="img1" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="172.0" mouseTransparent="true" onMouseClicked="#painelHome" preserveRatio="true" styleClass="home.css">
+               <image>
+                  <Image url="@../../images/1.png" />
+               </image>
+            </ImageView>
+            <ImageView id="imgHome" fx:id="img11" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="320.0" mouseTransparent="true" onMouseClicked="#painelHome" preserveRatio="true" styleClass="home.css">
+               <image>
+                  <Image url="@../../images/2.png" />
+               </image>
+            </ImageView>
+            <ImageView id="imgHome" fx:id="img111" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="676.0" mouseTransparent="true" onMouseClicked="#painelHome" preserveRatio="true" styleClass="home.css">
+               <image>
+                  <Image url="@../../images/iconSair.png" />
+               </image>
+            </ImageView>
+            <ImageView id="imgHome" fx:id="img12" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="24.0" mouseTransparent="true" onMouseClicked="#painelHome" preserveRatio="true" styleClass="home.css">
+               <image>
+                  <Image url="@../../images/3.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="painelFeedbacks" layoutX="-4.0" layoutY="-1.0" prefHeight="803.0" prefWidth="1015.0" style="-fx-background-color: #5BBAF0;" visible="false">
+         <children>
+            <Button fx:id="btLotacao" layoutX="130.0" layoutY="296.0" mnemonicParsing="false" onAction="#selecionaLotacao" prefHeight="144.67" prefWidth="144.67" text="Lotacao">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btAcidente" layoutX="640.0" layoutY="296.0" mnemonicParsing="false" onAction="#selecionaAcidente" prefHeight="144.67" prefWidth="144.67" text="Acidente">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btSeguranca" layoutX="470.0" layoutY="296.0" mnemonicParsing="false" onAction="#selecionaSeguranca" prefHeight="144.67" prefWidth="144.67" text="Seguranca">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btAtraso" layoutX="297.0" layoutY="296.0" mnemonicParsing="false" onAction="#selecionaAtraso" prefHeight="144.67" prefWidth="144.67" text="Atraso">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tfDescricao" layoutX="182.0" layoutY="601.0" prefHeight="120.0" prefWidth="550.0" />
+            <Label fx:id="lbLinha" layoutX="310.0" layoutY="555.0" text="Adicione uma descrição">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbDescricao" layoutX="259.0" layoutY="202.0" text="Qual foi o inconveniente:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Pane layoutX="964.0" layoutY="-8.0" prefHeight="811.0" prefWidth="324.0" style="-fx-background-color: #003858;">
+               <effect>
+                  <InnerShadow height="14.66" offsetX="2.0" offsetY="4.0" radius="10.4925" width="29.31" />
+               </effect>
+               <children>
+                  <Button fx:id="btEnviar" layoutX="126.0" layoutY="595.0" mnemonicParsing="false" onAction="#enviarFeedback" prefHeight="63.0" prefWidth="72.0" text="-&gt;" />
+                  <Label fx:id="lbLinha2" layoutX="125.0" layoutY="665.0" text="Enviar">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbLinha3" layoutX="39.0" layoutY="61.0" prefHeight="320.0" prefWidth="246.0" text="Nos ajude a transformar seu transporte em uma expêriencia melhor" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btSair" layoutX="37.0" layoutY="21.0" mnemonicParsing="false" onAction="#fechaPainelFeedback" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #F79B9B;" text="&lt;&lt;">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ComboBox fx:id="cbLinhas" editable="true" layoutX="392.0" layoutY="90.0" prefHeight="53.0" prefWidth="130.0" promptText="Linha" />
+            <Label layoutX="349.0" layoutY="25.0" text="ENVIAR FEEDBACK" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneLogin" layoutX="-8.0" layoutY="-10.0" prefHeight="811.0" prefWidth="1288.0" style="-fx-background-color: #c4c2cd;">
+         <children>
+            <Pane fx:id="painelLogin" layoutX="52.0" layoutY="47.0" prefHeight="717.0" prefWidth="1185.0" style="-fx-background-color: #373250;" styleClass="home.css">
+               <children>
+                  <TextField fx:id="tfEmail" layoutX="771.0" layoutY="238.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+                  <PasswordField fx:id="tfSenha" layoutX="771.0" layoutY="330.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+                  <Label layoutX="771.0" layoutY="209.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="771.0" layoutY="300.0" text="Senha" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="984.0" layoutY="470.0" mnemonicParsing="false" onAction="#logar" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: #665f81;" text="&gt;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAbrirCadastroPane" layoutX="770.0" layoutY="470.0" mnemonicParsing="false" onAction="#abrirCadastro" prefHeight="38.0" prefWidth="198.0" style="-fx-background-color: #607C82;" text="Cadastrar">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="470.0" fitWidth="470.0" layoutX="140.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txCMB" layoutX="189.0" layoutY="115.0" text="Cadê Meu Busão" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneCadastro" layoutX="-8.0" layoutY="-2.0" prefHeight="811.0" prefWidth="1288.0" style="-fx-background-color: #c4c2cd;" visible="false">
+         <children>
+            <Pane fx:id="painelCadastro" layoutX="52.0" layoutY="39.0" prefHeight="717.0" prefWidth="1185.0" style="-fx-background-color: #373250;" styleClass="home.css">
+               <children>
+                  <Button fx:id="btnCadastrar" layoutX="793.0" layoutY="563.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="38.0" prefWidth="198.0" style="-fx-background-color: #607C82;" text="Cadastrar">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="tfEmailCadastro" layoutX="767.0" layoutY="148.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+                  <PasswordField fx:id="pfSenhaCadastro" layoutX="767.0" layoutY="390.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+                  <Label layoutX="767.0" layoutY="112.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="767.0" layoutY="359.0" text="Senha" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="checkboxTermosCadastro" layoutX="781.0" layoutY="527.0" mnemonicParsing="false" textFill="WHITE" />
+                  <Button fx:id="btnVoltar" layoutX="38.0" layoutY="38.0" mnemonicParsing="false" onAction="#fecharPainelCadastro" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: #665f81;" text="&lt;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="800.0" layoutY="527.0" text="concordo com os termos" textFill="#79bbe4">
+                     <font>
+                        <Font name="Courier New" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="767.0" layoutY="197.0" text="Nome" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfNomeCadastro" layoutX="767.0" layoutY="230.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+                  <DatePicker fx:id="dateNascimentoCadastro" layoutX="767.0" layoutY="309.0" prefHeight="35.0" prefWidth="246.0" />
+                  <Label layoutX="767.0" layoutY="277.0" text="Data de nascimento" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="767.0" layoutY="434.0" text="Confirmar Senha" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="pfConfirmarSenhaCadastro" layoutX="765.0" layoutY="468.0" prefHeight="35.0" prefWidth="250.0" styleClass="logn.css" />
+                  <ImageView fitHeight="470.0" fitWidth="470.0" layoutX="140.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txCMB1" layoutX="189.0" layoutY="115.0" text="Cadê Meu Busão" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

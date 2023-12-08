@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+
+#painelLogin {
+    
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 80, 0, 0, 0);
+    -fx-background-radius: 15;
+}
+#painelCadastro {
+    
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 80, 0, 0, 0);
+    -fx-background-radius: 15;
+}
+
+
+
+
+
+
+
+#grafFeedback  {
+    -fx-legend-visible: false; /* Oculta a legenda */
+    -fx-font-family: 'JetBrains Mono', monospace; /* Altera a fonte do título */
+    -fx-font-size: 18px; /* Altera o tamanho da fonte do título */
+    -fx-text-fill: #ffffff; /* Altera a cor do texto do título */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 1, 0, 0);
+}
+
+/* Alterar o estilo da borda das fatias */
+.chart-pie {
+    
+    -fx-border-color: #2b2a2a; /* Cor da borda desejada */
+    -fx-border-width: 1px; /* Largura da borda desejada */
+}
+/* Alterar a cor do texto da legenda ao redor do PieChart */
+.chart-pie-label {
+    -fx-fill: #ffffff; /* Cor do texto desejada */
+}
+
+
+
+
+#txTitle{
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 60;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.54), 0, 0, 0, 2, 0.75);
+}
+
+
+#bt1 {
+    -fx-background-color: #000000;;
+    -fx-cursor: hand;
+
+}
+#bt1:hover {
+    -fx-background-color: #2b2a2a;;
+}
+#bt1:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+}
+
+#bt2 {
+    -fx-background-color: #000000;;
+    -fx-cursor: hand;
+}
+#bt2:hover {
+    -fx-background-color: #2b2a2a;;
+}
+#bt2:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+}
+
+#bt3 {
+    -fx-background-color: #000000;;
+    -fx-cursor: hand;
+}
+#bt3:hover {
+    -fx-background-color: #2b2a2a;;
+}
+#bt3:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+}
+
+#bt4 {
+    -fx-background-color: #000000;;
+    -fx-cursor: hand;
+}
+#bt4:hover {
+    -fx-background-color: #2b2a2a;;
+}
+#bt4:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+}
+
+#bt5 {
+    -fx-background-color: #000000;;
+    -fx-cursor: hand;
+}
+#bt5:hover {
+    -fx-background-color: #2b2a2a;
+}
+#bt5:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 0);
+}
+
+#c1 {
+    -fx-fill: #BCFF87;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.54), 0, 0, 0, 2, 0.75);
+}
+#c2 {
+    -fx-fill: #FF5E5E;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.54), 0, 0, 0, 2, 0.75);
+}
+#c3 {
+    -fx-fill: #5F4CA8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.54), 0, 0, 0, 2, 0.75);
+}
+#c4 {
+    -fx-fill: #F3D3BD;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.54), 0, 0, 0, 2, 0.75);
+}
+
+#quadroDestaques {
+    -fx-background-color: transparent;
+    -fx-background-radius: 62;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 5;
+    -fx-border-radius: 62; 
+}
+
+#txCMB{
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 50;
+   
+}
+#txCMB1{
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 50;
+   
+}
+#txQuantFeed {
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+   
+}
+#txTotal { 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+}
+#txLot {
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+}
+#txSeg {
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+}
+#txUltimos{ 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 22;
+}
+#txVerifique{ 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 20;
+}
+#txDescricao1{ 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 15;
+}
+#txLinhas1{ 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 15;
+}
+#txData1{ 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 15;
+}
+#txAci { 
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+}
+#txAtr {
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+}
+#txLinhaMais {
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-font-size: 30;
+}
+#txEnviaF {
+    -fx-font-family: 'JetBrains Mono', monospace;
+    -fx-text-alignment: center;
+}
+
