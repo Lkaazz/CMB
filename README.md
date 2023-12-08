@@ -16,6 +16,7 @@ O principal objetivo é a exposição da situação atual do transporte público
 
 - Linguagem de Programação: Java
 - Banco de Dados: MySQL
+- Design: CSS for javafx
 - Engenharia: Diagramas UML + Mapa de objetivos
 - API: Google My Maps
 
