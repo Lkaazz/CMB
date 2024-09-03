@@ -1,4 +1,3 @@
-# CMB# Cadê meu Busão
 
 # <p align=center> CMB - Cadê meu Busão
 <p align="center">
