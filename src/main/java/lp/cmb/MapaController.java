@@ -66,7 +66,11 @@ public class MapaController implements Initializable {
             case "225":
                 return "https://www.google.com/maps/d/u/0/embed?mid=1jN3VsIkkdOCo2A_9Y7e0EFgrGFnZFQY&ehbc=2E312F&noprof=1";
             case "226":
+<<<<<<< HEAD
                 return "https://www.google.com/maps/d/u/0/embed?mid=1bZccwAuIUzGaXfXkwyS3ewlUEBZRGHk&ehbc=2E312F&noprof=1";
+=======
+                return "https://www.google.com/maps/d/u/0/edit?mid=18lFeXVMiGPj3RIN2N_IUUckeoU_F08M&usp=sharing";
+>>>>>>> master
             case "210":
                 return "https://www.google.com/maps/d/u/0/embed?mid=1hHBBgn5LlK6K3tR-CrAbtivSDANoRcw&ehbc=2E312F&noprof=1";
             case "213":
